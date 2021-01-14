@@ -1,5 +1,5 @@
 # 해야할 공부
-- andrew(https://www.coursera.org/learn/machine-learning/home/welcome) 
+- [andrew](https://www.coursera.org/learn/machine-learning/home/welcome) 
 - CS231N
 - 선형대수
 ------------------------------------------------------------
