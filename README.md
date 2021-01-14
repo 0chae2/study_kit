@@ -1,6 +1,6 @@
 # 해야할 공부
 - [andrew](https://www.coursera.org/learn/machine-learning/home/welcome) 
-- CS231N
+- [CS231N 해설](https://cding.tistory.com/5) 
 - 선형대수
 ------------------------------------------------------------
 ### 과제
