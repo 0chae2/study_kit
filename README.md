@@ -38,3 +38,4 @@
 
 [참고]
 - [머신러닝개요](https://m.blog.naver.com/laonple/221166694845)
+- [조대협님 블로그](https://bcho.tistory.com/1149)
