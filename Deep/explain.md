@@ -22,4 +22,5 @@
 - [머신러닝개요](https://m.blog.naver.com/laonple/221166694845)
 - [AlexNet](https://bskyvision.com/421)
 - [조대협님 블로그](https://bcho.tistory.com/1149)
+- [humkim git](https://github.com/hunkim/DeepLearningZeroToAll)
   
