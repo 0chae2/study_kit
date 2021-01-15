@@ -159,5 +159,10 @@ optimizer
 
 
 
+##### CNN
+ - https://velog.io/@tmddn0311/CNN-tutorial
+ - [CNN 오차역전파](https://ratsgo.github.io/deep%20learning/2017/04/05/CNNbackprop/)
+
+
 [][markdown 사용법] (https://steemit.com/kr/@buket47/emoji-2018-05-10)
 [][markdown 이모티콘 출처](http://www.iemoji.com/#?category=food-drink&version=36&theme=appl&skintone=default)
