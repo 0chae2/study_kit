@@ -119,3 +119,7 @@ optimizer
 [1][tensorflow good](https://codetorial.net/tensorflow/basics_of_optimizer.html)
 [2][Deep 개념](https://excelsior-cjh.tistory.com/79)
 [3][김태영의케라스](https://tykimos.github.io/lecture/)
+[4][나중에 따라해](https://www.edwith.org/deeplearningai4/lecture/34895)
+[5][one-shot learing설명](https://medium.com/mathpresso/%EC%83%B4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%80%EC%83%89%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0-f2af4f9e312a)
+[6][One-shot 발표](http://dsba.korea.ac.kr/seminar/?mod=document&uid=63)
+[7][밑바닥 부터 시작하는 딥러닝](https://velog.io/@jakeseo_me/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D-2-2-MNIST-%EC%86%90%EA%B8%80%EC%94%A8-%EC%88%AB%EC%9E%90-%EC%9D%B8%EC%8B%9D)
