@@ -1,27 +1,6 @@
 *개인적인 공부를 목적으로 출처표기 후 작성하였습니다.
 
-
-
-2. CNN이란
-- Fully connected와 차이점
-
-- Input
-```
-    1) Feature extraction : 특징을 추출하기 위한 단계
-    2) Shift and distortion invariance : topology 변화에 영향을 받지 않도록 해주는 단계
-    3) Classification : 분류기
-```
-- Output
-    
-    
-- Filter란 ? 
-    + 특징이 데이터에 있는지 없는지 검출해 주는 함수
-    + 각기다른 특징들을 검출해 줄 수 있는 것
-
-- Stride : 필터를 적용하는 간격
-
-
------------------------------------------------------------------
+----------------------------------------------------------------
     
 #### 용어정리
 
@@ -30,10 +9,29 @@
 - Over fitting : 트레이닝 데이터에 그래프가 너무 정확히 맞아들어갈 때, 샘플 데이터에 너무 정확히 학습되어 있는 경우
     + over fitting sol ) 충분한 트레이닝 데이터를 준비한다 / 피처 수를 줄인다 / regularization정규화를 한다!
 
------------------------------------
-
+-------
 ### Tensorflow 
 - Tensor : 다차원 배열 (Multi-dimensional Array)
+- [Keras Sequential](http://blog.daum.net/sualchi/13720852)
+    + Keras의 Sequential 모델은 레이어들의 선형 스택(a linear stack of layers)로 되어있음
+    ```python
+    # model에 생성
+    from keras.models import Sequential
+    from keras.layers import Dense, Activation
+    model = Sequential([
+    Dense(32, input_shape=(784,)), # 클래스32
+    Activation('relu'),             # 선형 함수
+    Dense(10),                       # 클래스 10
+    Activation('softmax'),])
+    
+    # add() 활용 계층 추가
+    model = Sequential()
+    model.add(Dense(32, input_dim=784))
+    model.add(Activation('relu'))
+    model.add(Dense(10, input_dim=32)) #
+    model.add(Activation('softmax'))    #
+    ```
+ - 특징을 추출해주는 [Convoulution layer](https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/)
 
 ##### [Tensor 기본](https://codetorial.net/tensorflow/basics_of_tensor.html)
 ```python
@@ -48,6 +46,8 @@ tf.Tensor([[0. 0. 0.][0. 0. 0.]], shape=(2, 3), dtype=float32)
 print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 ```
 ##### [Numpy함수](https://codetorial.net/numpy/functions/index.html)
+
+-----------------------------------
 
 
 1. Neural Network
@@ -81,6 +81,26 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
     - Random search
     - Bayesian optimization
   ```
+
+2. CNN이란
+- Fully connected와 차이점
+
+- Input
+```
+    1) Feature extraction : 특징을 추출하기 위한 단계
+    2) Shift and distortion invariance : topology 변화에 영향을 받지 않도록 해주는 단계
+    3) Classification : 분류기
+```
+- Output
+    
+    
+- Filter란 ? 
+    + 특징이 데이터에 있는지 없는지 검출해 주는 함수
+    + 각기다른 특징들을 검출해 줄 수 있는 것
+
+- Stride : 필터를 적용하는 간격
+
+
 optimizer
 - SGD : Stochastic Gradient Descent 확률적 경사하강법
 - adam
@@ -98,3 +118,4 @@ optimizer
 
 [1][tensorflow good](https://codetorial.net/tensorflow/basics_of_optimizer.html)
 [2][Deep 개념](https://excelsior-cjh.tistory.com/79)
+[3][김태영의케라스](https://tykimos.github.io/lecture/)
