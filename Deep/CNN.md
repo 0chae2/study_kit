@@ -1,4 +1,4 @@
-*개인적인 공부를 목적으로 출처표기 후 작성하였습니다.
+*개인적인 공부를 목적으로 출처 표기 후 작성하였습니다.
 
 ----------------------------------------------------------------
     
@@ -12,7 +12,8 @@
 -------
 ### Tensorflow 
 - Tensor : 다차원 배열 (Multi-dimensional Array)
-- [Keras Sequential](http://blog.daum.net/sualchi/13720852)
+- 특징을 추출해주는 [Convoulution layer](https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/)
+1. [Keras Sequential](http://blog.daum.net/sualchi/13720852)
     + Keras의 Sequential 모델은 레이어들의 선형 스택(a linear stack of layers)로 되어있음
     ```python
     # model에 생성
@@ -31,8 +32,26 @@
     model.add(Dense(10, input_dim=32)) #
     model.add(Activation('softmax'))    #
     ```
- - 특징을 추출해주는 [Convoulution layer](https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/)
+2. [tf.keras.models.Sequential.compile](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
+```python
+compile(
+    optimizer='rmsprop', loss=None, metrics=None, loss_weights=None,
+    weighted_metrics=None, run_eagerly=None, steps_per_execution=None, **kwargs
+)
+```
+    - optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
+    - loss : 
+    - metrics :
+    - loss_weights : 
+    - weighted_metrics : 
+    - run_eagerly :
+    - steps_per_execution
+    - **kwargs : 
 
+
+###### [model생성](https://ebbnflow.tistory.com/128?category=738689)
+- Sequential API : 단순한 층 쌓기 가능, 직관적 
+- Functional API : 복잡한 층 쌓기 가능
 ##### [Tensor 기본](https://codetorial.net/tensorflow/basics_of_tensor.html)
 ```python
 a = tf.constant(1) # constant는 상수 텐서를 만듬
@@ -124,3 +143,11 @@ optimizer
 [6][One-shot 발표](http://dsba.korea.ac.kr/seminar/?mod=document&uid=63)
 [7][밑바닥 부터 시작하는 딥러닝](https://velog.io/@jakeseo_me/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D-2-2-MNIST-%EC%86%90%EA%B8%80%EC%94%A8-%EC%88%AB%EC%9E%90-%EC%9D%B8%EC%8B%9D)
 [8][성능 평가까지 완벽](https://velog.io/@tmddn0311/mnist-classification)
+[][Keras API/선형회귀그런거 정리](https://wikidocs.net/38861)
+[][Keras Docs](https://keras.io/ko/optimizers/)
+[][간단한 동영상](https://www.youtube.com/watch?v=VWFPlPYxzNg&list=PLVNY1HnUlO2702hhjCldVCwKiudLHhPG0)
+[][앙상블부터 보기](https://ebbnflow.tistory.com/133)
+[][앙상블 정리](https://teddylee777.github.io/scikit-learn/scikit-learn-ensemble)
+[][tensorflow DQN](https://github.com/devsisters/DQN-tensorflow/)
+[][오차역전파이론](https://excelsior-cjh.tistory.com/171)
+[이거다!][Mnist여러가지모델로 최적화](https://buomsoo-kim.github.io/keras/2018/04/22/Easy-deep-learning-with-Keras-4.md/)
