@@ -4,11 +4,14 @@
 
 2. CNN이란
 - Fully connected와 차이점
-    0) Input
+
+- Input
+```
     1) Feature extraction : 특징을 추출하기 위한 단계
     2) Shift and distortion invariance : topology 변화에 영향을 받지 않도록 해주는 단계
     3) Classification : 분류기
-    4) Output
+```
+- Output
     
     
 - Filter란 ? 
