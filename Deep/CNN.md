@@ -50,4 +50,5 @@
 - [조대협님 블로그](https://bcho.tistory.com/1149)
 - [humkim git](https://github.com/hunkim/DeepLearningZeroToAll)
 - [모두의 딥러닝2](https://www.youtube.com/watch?v=qPMeuL2LIqY&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=2)
-- [딥러닝 개요](https://blog.naver.com/PostView.nhn?blogId=laonple&logNo=220608018546)
+- [라온피플딥러닝 개요](https://blog.naver.com/PostView.nhn?blogId=laonple&logNo=220608018546)
+- [정리오짐](https://excelsior-cjh.tistory.com/79)
