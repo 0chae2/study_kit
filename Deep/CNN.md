@@ -8,7 +8,10 @@
 
 - Over fitting : 트레이닝 데이터에 그래프가 너무 정확히 맞아들어갈 때, 샘플 데이터에 너무 정확히 학습되어 있는 경우
     + over fitting sol ) 충분한 트레이닝 데이터를 준비한다 / 피처 수를 줄인다 / regularization정규화를 한다!
-
+🍎 batch와 epoch
+- batch : 집단한 무리, 한회분을 묶다 > 딥러닝에서는 모델의 가중치를 한번 업데이트 시킬 때 사용되는 샘플들의 묶음
+    ex) 1000개 샘플 중 배치 사이즈가 20이라면 20개의 샘플 단위마다 모델의 가중치를 한번씩 업데이트 시킨다는 말, 즉 50번 가중치가 업데이트 된다는 말!!!! 하나의 데이터 셋을 50개의 배치로 나눠서 훈련을 진행했다고 보면 됨
+-
 -------
 ### Tensorflow 
 - Tensor : 다차원 배열 (Multi-dimensional Array)
@@ -101,7 +104,7 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
     - Bayesian optimization
   ```
 
-2. CNN이란
+2. [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
 - Fully connected와 차이점
 
 - Input
@@ -119,6 +122,7 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 
 - Stride : 필터를 적용하는 간격
 
+- Kernel : 한번에 처리할 노드의 크기
 
 optimizer
 - SGD : Stochastic Gradient Descent 확률적 경사하강법
@@ -134,16 +138,16 @@ optimizer
 - [humkim git](https://github.com/hunkim/DeepLearningZeroToAll)
 - [모두의 딥러닝2](https://www.youtube.com/watch?v=qPMeuL2LIqY&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=2)
 - [라온피플딥러닝 개요](https://blog.naver.com/PostView.nhn?blogId=laonple&logNo=220608018546)
-
+- [AI note](https://github.com/SeonminKim1/AI_Notes)
 [1][tensorflow good](https://codetorial.net/tensorflow/basics_of_optimizer.html)
 [2][Deep 개념](https://excelsior-cjh.tistory.com/79)
-[3][김태영의케라스](https://tykimos.github.io/lecture/)
+[3][김태영의케라스 :케라스기본개념](https://tykimos.github.io/lecture/)
 [4][나중에 따라해](https://www.edwith.org/deeplearningai4/lecture/34895)
 [5][one-shot learing설명](https://medium.com/mathpresso/%EC%83%B4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%80%EC%83%89%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0-f2af4f9e312a)
 [6][One-shot 발표](http://dsba.korea.ac.kr/seminar/?mod=document&uid=63)
 [7][밑바닥 부터 시작하는 딥러닝](https://velog.io/@jakeseo_me/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D-2-2-MNIST-%EC%86%90%EA%B8%80%EC%94%A8-%EC%88%AB%EC%9E%90-%EC%9D%B8%EC%8B%9D)
 [8][성능 평가까지 완벽](https://velog.io/@tmddn0311/mnist-classification)
-[][Keras API/선형회귀그런거 정리](https://wikidocs.net/38861)
+[][Keras API/선형회귀,로지스틱,다중입력 예제](https://wikidocs.net/38861)
 [][Keras Docs](https://keras.io/ko/optimizers/)
 [][간단한 동영상](https://www.youtube.com/watch?v=VWFPlPYxzNg&list=PLVNY1HnUlO2702hhjCldVCwKiudLHhPG0)
 [][앙상블부터 보기](https://ebbnflow.tistory.com/133)
@@ -151,3 +155,8 @@ optimizer
 [][tensorflow DQN](https://github.com/devsisters/DQN-tensorflow/)
 [][오차역전파이론](https://excelsior-cjh.tistory.com/171)
 [이거다!][Mnist여러가지모델로 최적화](https://buomsoo-kim.github.io/keras/2018/04/22/Easy-deep-learning-with-Keras-4.md/)
+
+
+
+[][markdown 사용법] (https://steemit.com/kr/@buket47/emoji-2018-05-10)
+[][markdown 이모티콘 출처](http://www.iemoji.com/#?category=food-drink&version=36&theme=appl&skintone=default)
