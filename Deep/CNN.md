@@ -1,15 +1,4 @@
 *개인적인 공부를 목적으로 출처표기 후 작성하였습니다.
-1. Neural Network
-- 인간의 뇌를 모방하여 만든 것
-- Input * Weight -- activation function-->output
-- Back propagation(역전파) : trainnig을 통해 weight를 결정해주는 것
-  
-  1) Activation Function
-  - step function
-  - sigmoid function
-  - ReLU
-  - Softmax function : multiclass classification 문제에서 많이 사용
-    ![softmax]()(softmax)
 
 
 
@@ -37,9 +26,57 @@
 
 - Over fitting : 트레이닝 데이터에 그래프가 너무 정확히 맞아들어갈 때, 샘플 데이터에 너무 정확히 학습되어 있는 경우
     + over fitting sol ) 충분한 트레이닝 데이터를 준비한다 / 피처 수를 줄인다 / regularization정규화를 한다!
-    
+- 
+-----------------------------------
+
+### Tensorflow 
+- Tensor : 다차원 배열 (Multi-dimensional Array)
+
+##### [Tensor 기본](https://codetorial.net/tensorflow/basics_of_tensor.html)
+```python
+a = tf.constant(1) # constant는 상수 텐서를 만듬
+b = tf.constant([2,3])
+print(a) # tf.Tensor(1, shape=(), dtype=int32)
+print(b) # tf.Tensor([2,3], shape=(2,),dtype=int32)
+
+c = tf.zeros([2, 3]) #zero는 0으로 채워진 tensor 만듬 / ones는 1로 채워진 tensor 만듬
+print(c)
+tf.Tensor([[0. 0. 0.][0. 0. 0.]], shape=(2, 3), dtype=float32)
+print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
+```
+##### [Numpy함수](https://codetorial.net/numpy/functions/index.html)
 
 
+1. Neural Network
+- 인간의 뇌를 모방하여 만든 것
+- Input * Weight -- activation function-->output
+- Back propagation(역전파) : trainnig을 통해 weight를 결정해주는 것
+  
+  1) Activation Function
+    - step function
+    - sigmoid function
+    - ReLU
+    - Softmax function : multiclass classification 문제에서 많이 사용
+       ![softmax]()(softmax)
+
+  2) Hyperparameter
+    - learning rate : 오차를 학습에 얼마나 반영할 지![learning rate]()
+    - cost function
+      + Mean square Error (평균제곱오차)
+      + Cross-Entropy Error(교차 엔트로피 오차)
+    - Regularization parameter(정규화)
+    - Mini-batch 크기
+    - Training 반복 횟수 : Training 횟수 너무 많으면 overfitting 
+    - Hidden unit 개수 : 많으면 네트워크 표현력 넓어져서 좋은 성능 낼 수도 있지만, overfitting 될 수도 있음 적으면 underfitting
+    - Weight intialization(가중치 초기화) : 모든 초기 값을 0으로 설정했을 떄 모든 뉴런이 동일한 결과를 내어, Back propagation 과정에서 동일한 gradient 값을 얻는다. 그렇게 되면 모든 파라미터가 동일한 값으로 update 되어 뉴런의 개수가 의미가 없어짐 *가중치는 보통 입력 데이터 수를 n으로 둘 때 +1/sqrt(n) ~ -1/sqrt(n)안에서 랜덤으로 결정함 
+   
+  3) Hyperparameter optimization
+    - Grid Search
+    - Random search
+    - Bayesian optimization
+optimizer
+- SGD : Stochastic Gradient Descent 확률적 경사하강법
+- adam
 
 
 
@@ -51,4 +88,6 @@
 - [humkim git](https://github.com/hunkim/DeepLearningZeroToAll)
 - [모두의 딥러닝2](https://www.youtube.com/watch?v=qPMeuL2LIqY&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=2)
 - [라온피플딥러닝 개요](https://blog.naver.com/PostView.nhn?blogId=laonple&logNo=220608018546)
-- [정리오짐](https://excelsior-cjh.tistory.com/79)
+
+[1][tensorflow good](https://codetorial.net/tensorflow/basics_of_optimizer.html)
+[2][Deep 개념](https://excelsior-cjh.tistory.com/79)
