@@ -174,3 +174,4 @@ optimizer
 [][markdown 사용법](https://steemit.com/kr/@buket47/emoji-2018-05-10)<br>
 [][markdown 이모티콘 출처](http://www.iemoji.com/#?category=food-drink&version=36&theme=appl&skintone=default)<br>
 [][sklearn](https://scikit-learn.org/stable/)<br>
+[][](https://hoya012.github.io/blog/deeplearning-classification-guidebook-1/)
