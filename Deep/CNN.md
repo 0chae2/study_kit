@@ -70,6 +70,12 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 ```
 ##### [Numpy함수](https://codetorial.net/numpy/functions/index.html)
 
+
+##### [🍇initializers](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal)
+##### [🥑Dense](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense?hl=ko)
+- model.add(Dense(50, kernel_initializer='he_normal')) : he_normal :: It draws samples from a truncated normal distribution centered on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor.
+
+- model.add(Activation('sigmoid'))
 -----------------------------------
 
 
