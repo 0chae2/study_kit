@@ -14,70 +14,6 @@
     ex) 1000개 샘플 중 배치 사이즈가 20이라면 20개의 샘플 단위마다 모델의 가중치를 한번씩 업데이트 시킨다는 말, 즉 50번 가중치가 업데이트 된다는 말!!!! 하나의 데이터 셋을 50개의 배치로 나눠서 훈련을 진행했다고 보면 됨
 - epoch : 중요한 사건, 변화들이 일어난 시대! > 딥러닝에서 에포크는 학습의 횟수를 의미한다 ex) epoch 10, batch 20 가중치를 50번 업데이트 하는 것을 총 10번 반복한다는!! 각 데이터 샘플이 총 10번씩 사용되는 것이다! 결과적으로 50 * 10 = 500번 업데이트
 -------
-### Tensorflow 
-- Tensor : 다차원 배열 (Multi-dimensional Array)
-- 특징을 추출해주는 [Convoulution layer](https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/)
-1. [Keras Sequential](http://blog.daum.net/sualchi/13720852)
-    + Keras의 Sequential 모델은 레이어들의 선형 스택(a linear stack of layers)로 되어있음
-    ```python
-    # model에 생성
-    from keras.models import Sequential
-    from keras.layers import Dense, Activation
-    model = Sequential([
-    Dense(32, input_shape=(784,)), # 클래스32
-    Activation('relu'),             # 선형 함수
-    Dense(10),                       # 클래스 10
-    Activation('softmax'),])
-    
-    # add() 활용 계층 추가
-    model = Sequential()
-    model.add(Dense(32, input_dim=784))
-    model.add(Activation('relu'))
-    model.add(Dense(10, input_dim=32)) #
-    model.add(Activation('softmax'))    #
-    ```
-2. [tf.keras.models.Sequential.compile](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
-```python
-compile(
-    optimizer='rmsprop', loss=None, metrics=None, loss_weights=None,
-    weighted_metrics=None, run_eagerly=None, steps_per_execution=None, **kwargs
-)
-```
-    - optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
-    - loss : 
-    - metrics :
-    - loss_weights : 
-    - weighted_metrics : 
-    - run_eagerly :
-    - steps_per_execution
-    - **kwargs : 
-
-
-###### [model생성](https://ebbnflow.tistory.com/128?category=738689)
-- Sequential API : 단순한 층 쌓기 가능, 직관적 
-- Functional API : 복잡한 층 쌓기 가능
-##### [Tensor 기본](https://codetorial.net/tensorflow/basics_of_tensor.html)
-```python
-a = tf.constant(1) # constant는 상수 텐서를 만듬
-b = tf.constant([2,3])
-print(a) # tf.Tensor(1, shape=(), dtype=int32)
-print(b) # tf.Tensor([2,3], shape=(2,),dtype=int32)
-
-c = tf.zeros([2, 3]) #zero는 0으로 채워진 tensor 만듬 / ones는 1로 채워진 tensor 만듬
-print(c)
-tf.Tensor([[0. 0. 0.][0. 0. 0.]], shape=(2, 3), dtype=float32)
-print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
-```
-##### [Numpy함수](https://codetorial.net/numpy/functions/index.html)
-
-
-##### [🍇initializers](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal)
-##### [🥑Dense](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense?hl=ko)
-- model.add(Dense(50, kernel_initializer='he_normal')) : he_normal :: It draws samples from a truncated normal distribution centered on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor.
-
-- model.add(Activation('sigmoid'))
------------------------------------
-
 
 0. Neural Network
 - 인간의 뇌를 모방하여 만든 것
@@ -92,48 +28,28 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 - [ReLU](www.naver.com)
 - Softmax function : multiclass classification 문제에서 많이 사용
 ```
-  2) Hyperparameter
-  ```
-    - learning rate : 오차를 학습에 얼마나 반영할 지![learning rate]()
-    - cost function
-      + Mean square Error (평균제곱오차)
-      + Cross-Entropy Error(교차 엔트로피 오차)
-    - Regularization parameter(정규화)
-    - Mini-batch 크기
-    - Training 반복 횟수 : Training 횟수 너무 많으면 overfitting 
-    - Hidden unit 개수 : 많으면 네트워크 표현력 넓어져서 좋은 성능 낼 수도 있지만, overfitting 될 수도 있음 적으면 underfitting
-    - Weight intialization(가중치 초기화) : 모든 초기 값을 0으로 설정했을 떄 모든 뉴런이 동일한 결과를 내어, Back propagation 과정에서 동일한 gradient 값을 얻는다. 그렇게 되면 모든 파라미터가 동일한 값으로 update 되어 뉴런의 개수가 의미가 없어짐 *가중치는 보통 입력 데이터 수를 n으로 둘 때 +1/sqrt(n) ~ -1/sqrt(n)안에서 랜덤으로 결정함 
-  ```
-  3) Hyperparameter optimization
-  ```
-    - Grid Search
-    - Random search
-    - Bayesian optimization
-  ```
 
-2. [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
-- Fully connected와 차이점
+2. Hyperparameter
+- learning rate : 오차를 학습에 얼마나 반영할 지![learning rate]()
+- cost function
+  + Mean square Error (평균제곱오차)
+  + Cross-Entropy Error(교차 엔트로피 오차)
+- Regularization parameter(정규화)
+- Mini-batch 크기
+- Training 반복 횟수 : Training 횟수 너무 많으면 overfitting 
+- Hidden unit 개수 : 많으면 네트워크 표현력 넓어져서 좋은 성능 낼 수도 있지만, overfitting 될 수도 있음 적으면 underfitting
+- Weight intialization(가중치 초기화) : 모든 초기 값을 0으로 설정했을 떄 모든 뉴런이 동일한 결과를 내어, Back propagation 과정에서 동일한 gradient 값을 얻는다. 그렇게 되면 모든 파라미터가 동일한 값으로 update 되어 뉴런의 개수가 의미가 없어짐 *가중치는 보통 입력 데이터 수를 n으로 둘 때 +1/sqrt(n) ~ -1/sqrt(n)안에서 랜덤으로 결정함 
 
-- Input
-```
-    1) Feature extraction : 특징을 추출하기 위한 단계
-    2) Shift and distortion invariance : topology 변화에 영향을 받지 않도록 해주는 단계
-    3) Classification : 분류기
-```
-- Output
-    
-    
-- Filter란 ? 
-    + 특징이 데이터에 있는지 없는지 검출해 주는 함수
-    + 각기다른 특징들을 검출해 줄 수 있는 것
-
-- Stride : 필터를 적용하는 간격
-
-- Kernel : 한번에 처리할 노드의 크기
-
-optimizer
+3. Hyperparameter optimization
+- Grid Search
+- Random search
+- Bayesian optimization
 - SGD : Stochastic Gradient Descent 확률적 경사하강법
-- adam
+- Adam
+
+
+-----------------------------------------------------------
+##### [Numpy함수](https://codetorial.net/numpy/functions/index.html)
 
 
 
