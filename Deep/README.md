@@ -1,7 +1,7 @@
 *개인적인 공부를 목적으로 출처 표기 후 작성하였습니다.
 
 #### 🥝 [Tensorflow2.0](https://github.com/0chae2/study_kit/blob/main/Deep/program.md)
-#### 🍎 [CNN](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/README.md)
+#### 🍎 [CNN이론](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/README.md)
 
 
 ----------------------------------------------------------------
