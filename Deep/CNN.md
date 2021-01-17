@@ -1,7 +1,7 @@
 *본 게시글은 개인적인 공부를 위해 작성된 내용임으로, 자세한 내용은 아래의 명시한 출처를 참고해주세요.
 
 
-2. [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
+## [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
 - Fully connected와 차이점
 - Input
 ```
