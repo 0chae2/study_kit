@@ -59,7 +59,7 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
  ```
  #### [손실함수 평가지표](https://bskyvision.com/740?category=635506)
  - loss : 손실함수 훈련셋과 연관되어 훈련 시 사용
- - metric : 평가지표, 검증셋과 연관 훈련과정의 모니터링 시 사용됨
+ - [metric](https://keras.io/api/metrics/accuracy_metrics/#accuracy-class) : 평가지표, 검증셋과 연관 훈련과정의 모니터링 시 사용됨
  
  
 - optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
