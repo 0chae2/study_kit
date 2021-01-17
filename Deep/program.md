@@ -18,7 +18,7 @@ tf.Tensor([[0. 0. 0.][0. 0. 0.]], shape=(2, 3), dtype=float32)
 print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 ```
 -------------------------------
-
+## Fully-Conneted
 ### 0. 데이터 셋 불러오기
 ### 1. 데이터 셋 전처리
 ### 2. [Keras Sequential](http://blog.daum.net/sualchi/13720852)
@@ -69,7 +69,8 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 
 ### 4. [tf.keras.models.Sequential.fit](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
 - 오차역전파가 진행! loss function의 gradient가 역전파 > 그 gradient를 가지고 모델에게 맞는 최적의 가중치를 업데이트 하는 부분!
-
-
-
 -----------------------------------
+
+## CNN
+
+keras.utils.to_categorical : 원핫 인코딩?!
