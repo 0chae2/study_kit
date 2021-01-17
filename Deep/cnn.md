@@ -33,25 +33,24 @@
 
 --------------------
 
-#### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/imageclassification.md)
-LeNet
-AlexNet
-VGG Nets
-GoogLeNet
+### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
+LeNet,
+AlexNet,
+VGG Nets,
+GoogLeNet,
 ResNet
-#### Image Detection (object detection)
-RCNN
-Fast RCNN
-Faster RCNN
-SPP Net
-Yolo
-SDD
+### Image Detection (object detection)
+RCNN,
+Fast RCNN,
+Faster RCNN,
+SPP Net,
+Yolo,
+SDD,
 Attention Net
-#### Semantic Segmentation
-FCN
-DeepLab v1, v2
-U-Net
-ReSeg
+### Semantic Segmentation
+FCN, DeepLab v1, v2
+U-Net,
+ReSeg,
 Image Captioning
 
 ##### [Image classification / object detection 차이](https://bskyvision.com/413)
