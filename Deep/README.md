@@ -1,5 +1,15 @@
 *개인적인 공부를 목적으로 출처 표기 후 작성하였습니다.
 
+🥝 찾아보자<br>
+
+- [PCA](https://bskyvision.com/347?category=635506) : 주 성분분석
+- [LDA](https://bskyvision.com/351?category=635506) : 선형판별분석
+
+- MNIST 성능 그래프 따기
+- CNN강의듣기
+- CNN / Alexnet 뭐 그런거 정리
+----------------------------------------------------------
+
 #### 🥝 [Tensorflow2.0](https://github.com/0chae2/study_kit/blob/main/Deep/program.md)
 #### 🍎 [CNN이론](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/README.md)
 #### [Deep learning confusion](https://programmersought.com/article/3136974038/) : matrix accuracy top1 top5 accuracy of each class
@@ -23,11 +33,6 @@
 🍎 [Over fitting](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit) : 트레이닝 데이터에 그래프가 너무 정확히 맞아들어갈 때, 샘플 데이터에 너무 정확히 학습되어 있는 경우
     + over fitting sol ) 충분한 트레이닝 데이터를 준비한다 / 피처 수를 줄인다 / regularization정규화를 한다!<br>
     
-🥝 찾아보자<br>
-
-- [PCA](https://bskyvision.com/347?category=635506) : 주 성분분석
-- [LDA](https://bskyvision.com/351?category=635506) : 선형판별분석
-
 
 -----------
 
