@@ -54,19 +54,17 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 ### 3. [tf.keras.models.Sequential.compile](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
 
     ```python
-        compile(
-        optimizer='rmsprop', loss=None, metrics=None, loss_weights=None,
-        weighted_metrics=None, run_eagerly=None, steps_per_execution=None, **kwargs)
+        compile( optimizer='rmsprop', loss=None, metrics=None, loss_weights=None,
+         weighted_metrics=None, run_eagerly=None, steps_per_execution=None, **kwargs)
     ```
-    
-    - optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
-    - loss : 
-    - metrics :
-    - loss_weights : 
-    - weighted_metrics : 
-    - run_eagerly :
-    - steps_per_execution
-    - **kwargs : 
+- optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
+- loss : 
+- metrics :
+- loss_weights : 
+- weighted_metrics : 
+- run_eagerly :
+- steps_per_execution
+- **kwargs : 
 
 ### 4. [tf.keras.models.Sequential.fit](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
 - 오차역전파가 진행! loss function의 gradient가 역전파 > 그 gradient를 가지고 모델에게 맞는 최적의 가중치를 업데이트 하는 부분!
