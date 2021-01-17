@@ -5,67 +5,64 @@
 
 
 ----------------------------------------------------------------
-    
-#### 용어정리
 
-
-- Under fitting : 학습데이터가 모자라거나, 학습이 제대로 되지 않는 것, 트레이닝 데이터에 가깝게 가지 못 하는 경우
-
-- Over fitting : 트레이닝 데이터에 그래프가 너무 정확히 맞아들어갈 때, 샘플 데이터에 너무 정확히 학습되어 있는 경우
-    + over fitting sol ) 충분한 트레이닝 데이터를 준비한다 / 피처 수를 줄인다 / regularization정규화를 한다!<br>
+- Neural Network : 인간의 뇌를 모방하여 만든 것
+- Input * Weight -- activation function-->output
+  
     
 🍎 [batch와 epoch](https://bskyvision.com/803)
 - batch : 집단한 무리, 한회분을 묶다 > 딥러닝에서는 모델의 가중치를 한번 업데이트 시킬 때 사용되는 샘플들의 묶음
     ex) 1000개 샘플 중 배치 사이즈가 20이라면 20개의 샘플 단위마다 모델의 가중치를 한번씩 업데이트 시킨다는 말, 즉 50번 가중치가 업데이트 된다는 말!!!! 하나의 데이터 셋을 50개의 배치로 나눠서 훈련을 진행했다고 보면 됨
 - epoch : 중요한 사건, 변화들이 일어난 시대! > 딥러닝에서 에포크는 학습의 횟수를 의미한다 ex) epoch 10, batch 20 가중치를 50번 업데이트 하는 것을 총 10번 반복한다는!! 각 데이터 샘플이 총 10번씩 사용되는 것이다! 결과적으로 50 * 10 = 500번 업데이트
 <br>
+
+🍎 Back propagation(역전파) : trainnig을 통해 weight를 결정해주는 것  
+
+🍎 Under fitting : 학습데이터가 모자라거나, 학습이 제대로 되지 않는 것, 트레이닝 데이터에 가깝게 가지 못 하는 경우
+
+🍎 Over fitting : 트레이닝 데이터에 그래프가 너무 정확히 맞아들어갈 때, 샘플 데이터에 너무 정확히 학습되어 있는 경우
+    + over fitting sol ) 충분한 트레이닝 데이터를 준비한다 / 피처 수를 줄인다 / regularization정규화를 한다!<br>
+    
 🥝 찾아보자<br>
 
 - [PCA](https://bskyvision.com/347?category=635506) : 주 성분분석
 - [LDA](https://bskyvision.com/351?category=635506) : 선형판별분석
 
 
+-----------
 
+### Activation Function
 
-
-
--------
-
-0. Neural Network
-- 인간의 뇌를 모방하여 만든 것
-- Input * Weight -- activation function-->output
-- Back propagation(역전파) : trainnig을 통해 weight를 결정해주는 것
-  
-1. Activation Function
-```
 - step function
 - sigmoid function
 - tanh
 - ReLU
 - Softmax function : multiclass classification 문제에서 많이 사용
-```
 
-2. Hyperparameter
-```
+---------------------
+### Hyperparameter
+
 - learning rate : 오차를 학습에 얼마나 반영할 지![learning rate]()
-- cost function
+
+- [cost function = loss function](http://www.gisdeveloper.co.kr/?p=7631)
   + Mean square Error (평균제곱오차)
   + Cross-Entropy Error(교차 엔트로피 오차)
+  
 - Regularization parameter(정규화)
 - Mini-batch 크기
 - Training 반복 횟수 : Training 횟수 너무 많으면 overfitting 
 - Hidden unit 개수 : 많으면 네트워크 표현력 넓어져서 좋은 성능 낼 수도 있지만, overfitting 될 수도 있음 적으면 underfitting
 - Weight intialization(가중치 초기화) : 모든 초기 값을 0으로 설정했을 떄 모든 뉴런이 동일한 결과를 내어, Back propagation 과정에서 동일한 gradient 값을 얻는다. 그렇게 되면 모든 파라미터가 동일한 값으로 update 되어 뉴런의 개수가 의미가 없어짐 *가중치는 보통 입력 데이터 수를 n으로 둘 때 +1/sqrt(n) ~ -1/sqrt(n)안에서 랜덤으로 결정함 
-```
 
-3. Hyperparameter optimization
-```
+
+### Hyperparameter optimization
+
 - Grid Search
 - Random search
 - Bayesian optimization
 - SGD : Stochastic Gradient Descent 확률적 경사하강법
 - Adam
-```
+
 
 -----------------------------------------------------------
 ##### [Numpy함수](https://codetorial.net/numpy/functions/index.html)
