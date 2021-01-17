@@ -2,7 +2,7 @@
 
 #### 🥝 [Tensorflow2.0](https://github.com/0chae2/study_kit/blob/main/Deep/program.md)
 #### 🍎 [CNN이론](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/README.md)
-
+#### [Deep learning confusion](https://programmersought.com/article/3136974038/) : matrix accuracy top1 top5 accuracy of each class
 
 ----------------------------------------------------------------
 
