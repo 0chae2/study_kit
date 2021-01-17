@@ -53,10 +53,11 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 
 ### 3. [tf.keras.models.Sequential.compile](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
 
-    ```python
+ ```python
         compile( optimizer='rmsprop', loss=None, metrics=None, loss_weights=None,
          weighted_metrics=None, run_eagerly=None, steps_per_execution=None, **kwargs)
-    ```
+ ```
+ 
 - optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
 - loss : 
 - metrics :
