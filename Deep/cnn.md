@@ -33,5 +33,5 @@
 
 --------------------
 
-#### [Image classification](
-#### [Object detection]
+#### [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/imageclassification.md)
+#### [Object detection](
