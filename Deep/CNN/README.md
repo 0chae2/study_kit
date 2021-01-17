@@ -39,6 +39,10 @@ AlexNet,
 VGG Nets,
 GoogLeNet,
 ResNet
+#### Image classification에서 자주 등장하는 [top-5 error and top-1 error](https://www.quora.com/What-does-the-terms-Top-1-and-Top-5-mean-in-the-context-of-Machine-Learning-research-papers-when-report-empirical-results)
+-
+
+
 ### Image Detection (object detection)
 RCNN,
 Fast RCNN,
