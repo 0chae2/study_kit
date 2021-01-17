@@ -79,19 +79,19 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 -----------------------------------
 
 
-1. Neural Network
+0. Neural Network
 - 인간의 뇌를 모방하여 만든 것
 - Input * Weight -- activation function-->output
 - Back propagation(역전파) : trainnig을 통해 weight를 결정해주는 것
   
-  1) Activation Function
-  ```
-    - step function
-    - sigmoid function
-    - ReLU
-    - Softmax function : multiclass classification 문제에서 많이 사용
-       ![softmax]()(softmax)
-  ```
+1. Activation Function
+```
+- step function
+- sigmoid function
+- tanh
+- [ReLU](www.naver.com)
+- Softmax function : multiclass classification 문제에서 많이 사용
+```
   2) Hyperparameter
   ```
     - learning rate : 오차를 학습에 얼마나 반영할 지![learning rate]()
