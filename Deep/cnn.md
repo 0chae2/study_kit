@@ -6,7 +6,7 @@
  - Image에 변형(크기변화 혹은 이동) 시에 같은 이미지라고 판단하지 못 함
     + 글자의 topology는 고려하지 않고, raw data에 대해 직접적으로 처리를 하기 때문에 엄청나게 많은 학습 데이터 필요 , 학습시간 증가 문제
     + ex) 32 * 32 pont // black and white 패턴에 대해 처리를 하기 위해서는 2^(32*32) = 2^1024 >> 이것을  Glay-scale에 적용한다면 256^(32*32) = 256^1024개의 패턴나옴,,,,
- - *학습시간, 망의 크기, 변수의 개수의 문제!!!!
+ - 학습시간, 망의 크기, 변수의 개수의 문제!!!!
     
 ## [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
 - 도입배경 영상이 가지는 공간적 특성을 강화 시킴(local [receptivefield](https://distill.pub/2019/computing-receptive-fields/))
@@ -33,5 +33,29 @@
 
 --------------------
 
-#### [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/imageclassification.md)
-#### [Object detection](
+#### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/imageclassification.md)
+LeNet
+AlexNet
+VGG Nets
+GoogLeNet
+ResNet
+#### Image Detection (object detection)
+RCNN
+Fast RCNN
+Faster RCNN
+SPP Net
+Yolo
+SDD
+Attention Net
+#### Semantic Segmentation
+FCN
+DeepLab v1, v2
+U-Net
+ReSeg
+Image Captioning
+
+##### [Image classification / object detection 차이](https://bskyvision.com/413)
+1. Image classification
+2. Object detection
+
+> 다시 확인
