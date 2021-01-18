@@ -126,7 +126,15 @@ fit(
 ----------
 ## [객체검출용어](https://light-tree.tistory.com/75) 와 관련한
 
-### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
+
+
+##### [Image classification / object detection 차이](https://bskyvision.com/413)
+1. Image classification
+2. Object detection
+
+> 다시 확인
+
+### 1. Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
 LeNet,
 AlexNet,
 VGG Nets,
@@ -145,7 +153,7 @@ ResNet
 
 
 
-### Image Detection (object detection)
+### 2. Image Detection (object detection)
 RCNN,
 Fast RCNN,
 Faster RCNN,
@@ -153,19 +161,12 @@ SPP Net,
 Yolo,
 SDD,
 Attention Net
-### Semantic Segmentation
+
+### 3. Semantic Segmentation
 FCN, DeepLab v1, v2
 U-Net,
 ReSeg,
 Image Captioning
-
-
-
-##### [Image classification / object detection 차이](https://bskyvision.com/413)
-1. Image classification
-2. Object detection
-
-> 다시 확인
 
 
 #### [출처]
