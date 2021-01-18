@@ -5,6 +5,18 @@
 
 ### AlexNet, 2012
 - GTX 580 2개로 연산 병렬처리
+- Input 227 * 227 * 3 images
+#### First layer(conv1) 
+- 96개 11 * 11 filters applied at stride 4
+- output : 55 * 55 * 96
+- parameters : (11 * 11 * 3) * 96 = 35K
+
+#### Second layer(Pool1)
+- 3 * 3 filters applied at stride 2
+- output : 27 * 27 * 96
+- parameters : 0!
+> norm 최근에 안함 
+![alex1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/alex1.png)
 
 
 1. ReLu Nonlinearity
@@ -29,6 +41,7 @@
 - data augmentation : 데이터의 변형을 통해 > 반전 or 크기변화 이동 > 하나의 이미지를 여러가지 학습셋으로 늘이는 역할 
 
 
+### GoogleNet
 
 
 
