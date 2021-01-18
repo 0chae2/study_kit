@@ -58,14 +58,16 @@ Fully-conneted layer - classification
 - overfitting을 조절 : parameter을 줄여 훈련데이터만 높은 성능을 보이는 과적합을 줄일 수 있다
 
 
-
+- filter
 ![filter 출처https://www.youtube.com/watch?v=Em63mknbtWo&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=31](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/Filter.png)
+- stride
 ![stride](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/stride.png)
 ![check](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/check.png)
-![padding](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/padding.png)
-<padding>
+- padding
 1) 그림이 급격하게 작아지는 것을 방지
 2) 이부분이 모서리다! 라는 것을 알려 줌
+
+![padding](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/padding.png)
 
 - Activation maps(?,?,filter 갯수) : ? ? > image 크기와 filter 크기 마다 달라짐
 ![activation](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/swiping.png)
@@ -87,6 +89,27 @@ tf.keras.layers.Conv2D(
 ```
 - filters : 사용할 필터 수
 - kernel_size : int, tuple / list 다 가능 ex)  3 / (3,3) / [3,3]
+
+2. [tf.keras.layers.MaxPool2D](https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D)
+```python
+tf.keras.layers.MaxPool2D( pool_size=(2, 2), strides=None, padding='valid', data_format=None, **kwargs )
+```
+- pool_size :  pooling에 사용할 filter의 크기를 정하는 것.(단순한 정수, 또는 튜플형태 (N,N))
+- strides :  pooling에 사용할 filter의 strides를 정하는 것.
+- padding :  "valide"(=padding을 안하는것) or "same"(=pooling결과 size가 input size와 동일하게 padding)
+
+ 
+##### Input shape:
+- If data_format='channels_last': 4D tensor with shape (batch_size, rows, cols, channels).
+- If data_format='channels_first': 4D tensor with shape (batch_size, channels, rows, cols).
+##### Output shape:
+- If data_format='channels_last': 4D tensor with shape (batch_size, pooled_rows, pooled_cols, channels).
+- If data_format='channels_first': 4D tensor with shape (batch_size, channels, pooled_rows, pooled_cols).
+
+
+
+
+
 
 ----------
 ### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
@@ -122,3 +145,4 @@ Image Captioning
 
 #### [출처]
 [1] [그림원출처](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
+[2] [함수설명]https://supermemi.tistory.com/16)
