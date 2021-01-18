@@ -36,7 +36,7 @@
    - [CS231N 해설](https://cding.tistory.com/5) 
    
    2) 좀 더 깊이 공부
-2. 선형대수학 - 210100 ~ 210200
+2. [선형대수학 - 210100 ~ 210200](http://www.kocw.net/home/m/search/kemView.do?kemId=1189957&ar=relateCourse)
 3. 영상처리기본 - 210200 ~
 4. SLAM! 공부가 최종 목표!!!
 - https://cv-learn.com/cv-learn-454b0d57429e44e68954ddddff22f7ca
