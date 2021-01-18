@@ -124,6 +124,8 @@ fit(
 
 
 ----------
+## [객체검출용어](https://light-tree.tistory.com/75) 와 관련한
+
 ### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
 LeNet,
 AlexNet,
@@ -136,7 +138,10 @@ GoogLeNet,fit(
     max_queue_size=10, workers=1, use_multiprocessing=False
 )
 ResNet
+
+
 #### Image classification에서 자주 등장하는 [top-5 error and top-1 error](https://www.quora.com/What-does-the-terms-Top-1-and-Top-5-mean-in-the-context-of-Machine-Learning-research-papers-when-report-empirical-results)
+
 
 
 
@@ -153,6 +158,8 @@ FCN, DeepLab v1, v2
 U-Net,
 ReSeg,
 Image Captioning
+
+
 
 ##### [Image classification / object detection 차이](https://bskyvision.com/413)
 1. Image classification
