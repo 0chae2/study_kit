@@ -89,6 +89,12 @@ tf.keras.layers.Conv2D(
 ```
 - filters : 사용할 필터 수
 - kernel_size : int, tuple / list 다 가능 ex)  3 / (3,3) / [3,3]
+- strides : integer / tuple / list
+- data_format : channels_last - default (batch, height, width, channels) / channels_first (batch, channels, height, width)
+- padding : valid P = 0 padding 을 안 해주는 / stride가 1일 때 기준으로 입력과 출력이 같아짐 Same (Case-insensitive)
+![padding](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/p1.png)
+
+
 
 2. [tf.keras.layers.MaxPool2D](https://www.tensorflow.org/api_docs/python/tf/keras/layers/MaxPool2D)
 ```python
@@ -105,7 +111,13 @@ tf.keras.layers.MaxPool2D( pool_size=(2, 2), strides=None, padding='valid', data
 ##### Output shape:
 - If data_format='channels_last': 4D tensor with shape (batch_size, pooled_rows, pooled_cols, channels).
 - If data_format='channels_first': 4D tensor with shape (batch_size, channels, pooled_rows, pooled_cols).
-
+fit(
+    x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None,
+    validation_split=0.0, validation_data=None, shuffle=True, class_weight=None,
+    sample_weight=None, initial_epoch=0, steps_per_epoch=None,
+    validation_steps=None, validation_batch_size=None, validation_freq=1,
+    max_queue_size=10, workers=1, use_multiprocessing=False
+)
 
 
 
@@ -116,7 +128,13 @@ tf.keras.layers.MaxPool2D( pool_size=(2, 2), strides=None, padding='valid', data
 LeNet,
 AlexNet,
 VGG Nets,
-GoogLeNet,
+GoogLeNet,fit(
+    x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None,
+    validation_split=0.0, validation_data=None, shuffle=True, class_weight=None,
+    sample_weight=None, initial_epoch=0, steps_per_epoch=None,
+    validation_steps=None, validation_batch_size=None, validation_freq=1,
+    max_queue_size=10, workers=1, use_multiprocessing=False
+)
 ResNet
 #### Image classification에서 자주 등장하는 [top-5 error and top-1 error](https://www.quora.com/What-does-the-terms-Top-1-and-Top-5-mean-in-the-context-of-Machine-Learning-research-papers-when-report-empirical-results)
 
