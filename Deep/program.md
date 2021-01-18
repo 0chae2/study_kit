@@ -113,6 +113,11 @@ fit(
     max_queue_size=10, workers=1, use_multiprocessing=False
 )
 ```
+
+### 모델 저장
+https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint
+https://www.tensorflow.org/tutorials/quickstart/advanced?hl=ko
+
 -----------------------------------
 
 ## CNN
