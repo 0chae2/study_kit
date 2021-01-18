@@ -23,6 +23,8 @@
 - tanh(2/(1+e^(-2x))-1)함수를 사용하는 것이 아닌 ReLu 함수를 활용함 
 - ReLU : max(0,x) 를 처음 제안한 논문은 아님 
 - speed : ReLU == tanh*6
+- sigmoid / tanh 처럼  일부 구간 제외 미분값 0 근처로 가는 Vanising Gradient > relu에도 발생하긴함 
+> 이를 해결하기 위해 2015 Batch Normalization 과 [Residual Network](#residual-network) 방법 탄생
 
 2. Local Response Normalization(LRN)
 - 신경생물학의 lateral inhibition
@@ -42,6 +44,9 @@
 
 
 ### GoogleNet
+
+
+### Residual Network
 
 
 
