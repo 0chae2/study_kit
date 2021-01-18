@@ -28,16 +28,16 @@
 - Stride : 필터를 적용하는 간격
 - Kernel : 한번에 처리할 노드의 크기
 
-![filter 출처https://www.youtube.com/watch?v=Em63mknbtWo&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=31]()
-![stride]()
-![check]()
-![padding]()
+![filter 출처https://www.youtube.com/watch?v=Em63mknbtWo&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=31](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/Filter.png)
+![stride](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/stride.png)
+![check](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/check.png)
+![padding](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/padding.png)
 1) 그림이 급격하게 작아지는 것을 방지
 2) 이부분이 모서리다! 라는 것을 알려 줌
 
 - Activation maps(?,?,filter 갯수) : ? ? > image 크기와 filter 크기 마다 달라짐
-![activation]()
-
+![activation](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/activation.png)
+![full](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/fully.png)
 
 --------------------
 
