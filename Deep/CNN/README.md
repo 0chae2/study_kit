@@ -32,11 +32,12 @@
 ![stride](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/stride.png)
 ![check](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/check.png)
 ![padding](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/padding.png)
+<padding>
 1) 그림이 급격하게 작아지는 것을 방지
 2) 이부분이 모서리다! 라는 것을 알려 줌
 
 - Activation maps(?,?,filter 갯수) : ? ? > image 크기와 filter 크기 마다 달라짐
-![activation](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/activation.png)
+![activation](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/swiping.png)
 ![full](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/fully.png)
 
 --------------------
