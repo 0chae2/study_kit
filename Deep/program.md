@@ -130,10 +130,23 @@ https://www.tensorflow.org/tutorials/quickstart/advanced?hl=ko
 tf.keras.layers.Dropout(rate) # 0.5 ~ o.3
 model(images, training=True) # dropout을 사용하겠다
 model(images, training=False) # 사용하지 않겠다
+
+
+model.add(relu())
+model.add(dropout(rate=0.5))
+
 ```
 ##### 🍇Batch Normalization
 - 신경망을 지나가면서 Internal Covariate shift (분포가 이상해지는) 를 막기 위해 batch normalization함
 ![batch](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/batch.png)
 ```python
 tf.keras.layers.BatchNormalization()
+
+
+
+model.add(batch_norm())
+model.add(relu())
 ```
+###### 순서
+- layer - norm - activation
+- norm - activation - layer
