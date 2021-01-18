@@ -109,7 +109,8 @@
 [][Mnist여러가지모델로 최적화](https://buomsoo-kim.github.io/keras/2018/04/22/Easy-deep-learning-with-Keras-4.md/)<br>
 
 [][Mnist 데이터의 특징](https://supermemi.tistory.com/10?category=835152)
-
+[][batch 잘 정리](
+  [해당깃]https://github.com/shuuki4/Batch-Normalization)
 ##### CNN
  - https://velog.io/@tmddn0311/CNN-tutorial
  - [CNN 오차역전파](https://ratsgo.github.io/deep%20learning/2017/04/05/CNNbackprop/)
