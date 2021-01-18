@@ -50,7 +50,7 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 - model.add(layers.Flatten()) : 
 - model.add(Activation('sigmoid')) : activation 함수 이거 쓰겠다~
 
-##### [🍇Activation]
+##### 🍇Activation
 ###### tf.keras.activations
 1. sigmoid problem
 - 극단 좌표계의 값들은 gradient 값이 매우 작게 됨 > deep한 네트워크 일 수록 >> 0에 가까워서 소실 될 수 있음 Vanising Gradient
