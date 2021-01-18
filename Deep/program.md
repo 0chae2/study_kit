@@ -125,4 +125,5 @@ https://www.tensorflow.org/tutorials/quickstart/advanced?hl=ko
 
 ## CNN
 
-
+##### 🍇Dropout
+![dropout]()
