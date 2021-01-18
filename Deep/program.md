@@ -85,7 +85,7 @@ tf.keras.initializers.he_uniform()
  - [metric](https://keras.io/api/metrics/accuracy_metrics/#accuracy-class) : 평가지표, 검증셋과 연관 훈련과정의 모니터링 시 사용됨
  
  
-- optimizer :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD
+- [optimizer](https://hyunw.kim/blog/2017/11/01/Optimization.html) :최적화모델 Adadelta, Adagrad, Adam, Adamax, Ftrl, Nadam, Optimizer, RMSprop, SGD , 
 - loss : 
 - metrics :
 - loss_weights : 
