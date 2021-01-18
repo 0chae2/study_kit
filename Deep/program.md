@@ -50,6 +50,15 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 - model.add(layers.Flatten()) : 
 - model.add(Activation('sigmoid')) : activation 함수 이거 쓰겠다~
 
+##### [🍇Activation]
+###### tf.keras.activations
+1. sigmoid problem
+- 극단 좌표계의 값들은 gradient 값이 매우 작게 됨 > deep한 네트워크 일 수록 >> 0에 가까워서 소실 될 수 있음 Vanising Gradient
+
+2. Relu
+- f(x) = max(0,x) >>> leaky relu 는 tf.keras.layers에 있음!
+
+
 ##### [🍇initializers](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal)
 - Random : 평균 0, 분산 1
 - Xavier Initialization : 평균 0, 분산 = 2/(channel_in + channel_out) 
