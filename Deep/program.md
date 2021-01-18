@@ -79,7 +79,8 @@ tf.keras.initializers.he_uniform()
         compile( optimizer='rmsprop', loss=None, metrics=None, loss_weights=None,
          weighted_metrics=None, run_eagerly=None, steps_per_execution=None, **kwargs)
  ```
- #### [손실함수 평가지표](https://bskyvision.com/740?category=635506)
+
+#### [손실함수 평가지표](https://bskyvision.com/740?category=635506)
  - loss : 손실함수 훈련셋과 연관되어 훈련 시 사용
  - [metric](https://keras.io/api/metrics/accuracy_metrics/#accuracy-class) : 평가지표, 검증셋과 연관 훈련과정의 모니터링 시 사용됨
  
