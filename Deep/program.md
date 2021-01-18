@@ -73,6 +73,26 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 
 ### 4. [tf.keras.models.Sequential.fit](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
 - 오차역전파가 진행! loss function의 gradient가 역전파 > 그 gradient를 가지고 모델에게 맞는 최적의 가중치를 업데이트 하는 부분!
+- tf.keras.models.fit
+```python
+fit(
+    x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None,
+    validation_split=0.0, validation_data=None, shuffle=True, class_weight=None,
+    sample_weight=None, initial_epoch=0, steps_per_epoch=None,
+    validation_steps=None, validation_batch_size=None, validation_freq=1,
+    max_queue_size=10, workers=1, use_multiprocessing=False
+)
+```
+- tf.keras.models.Sequential.fit
+```python
+fit(
+    x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None,
+    validation_split=0.0, validation_data=None, shuffle=True, class_weight=None,
+    sample_weight=None, initial_epoch=0, steps_per_epoch=None,
+    validation_steps=None, validation_batch_size=None, validation_freq=1,
+    max_queue_size=10, workers=1, use_multiprocessing=False
+)
+```
 -----------------------------------
 
 ## CNN
