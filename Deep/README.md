@@ -99,9 +99,9 @@
 [][앙상블 정리](https://teddylee777.github.io/scikit-learn/scikit-learn-ensemble)<br>
 [][tensorflow DQN](https://github.com/devsisters/DQN-tensorflow/)<br>
 [][오차역전파이론](https://excelsior-cjh.tistory.com/171)<br>
-[이거다!][Mnist여러가지모델로 최적화](https://buomsoo-kim.github.io/keras/2018/04/22/Easy-deep-learning-with-Keras-4.md/)<br>
+[][Mnist여러가지모델로 최적화](https://buomsoo-kim.github.io/keras/2018/04/22/Easy-deep-learning-with-Keras-4.md/)<br>
 
-
+[][Mnist 데이터의 특징](https://supermemi.tistory.com/10?category=835152)
 
 ##### CNN
  - https://velog.io/@tmddn0311/CNN-tutorial
