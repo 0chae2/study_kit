@@ -22,14 +22,22 @@
     3) Classification : 분류기
 ```
 - Output
-    
 - Filter란 ? 
     + 특징이 데이터에 있는지 없는지 검출해 주는 함수
     + 각기다른 특징들을 검출해 줄 수 있는 것
-
 - Stride : 필터를 적용하는 간격
-
 - Kernel : 한번에 처리할 노드의 크기
+
+![filter 출처https://www.youtube.com/watch?v=Em63mknbtWo&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=31]()
+![stride]()
+![check]()
+![padding]()
+1) 그림이 급격하게 작아지는 것을 방지
+2) 이부분이 모서리다! 라는 것을 알려 줌
+
+- Activation maps(?,?,filter 갯수) : ? ? > image 크기와 filter 크기 마다 달라짐
+![activation]()
+
 
 --------------------
 
@@ -62,3 +70,7 @@ Image Captioning
 2. Object detection
 
 > 다시 확인
+
+
+[출처]
+[1][그림원출처](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
