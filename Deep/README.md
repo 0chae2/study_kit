@@ -54,7 +54,7 @@
   + Cross-Entropy Error(교차 엔트로피 오차)
   
 - Regularization parameter(정규화)
-- Mini-batch 크기
+- Mini-batch 크기 : N개의 이미지를 넣어서 학습 하는 법 ????
 - Training 반복 횟수 : Training 횟수 너무 많으면 overfitting 
 - Hidden unit 개수 : 많으면 네트워크 표현력 넓어져서 좋은 성능 낼 수도 있지만, overfitting 될 수도 있음 적으면 underfitting
 - Weight intialization(가중치 초기화) : 모든 초기 값을 0으로 설정했을 떄 모든 뉴런이 동일한 결과를 내어, Back propagation 과정에서 동일한 gradient 값을 얻는다. 그렇게 되면 모든 파라미터가 동일한 값으로 update 되어 뉴런의 개수가 의미가 없어짐 *가중치는 보통 입력 데이터 수를 n으로 둘 때 +1/sqrt(n) ~ -1/sqrt(n)안에서 랜덤으로 결정함 
