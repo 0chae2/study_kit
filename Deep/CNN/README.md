@@ -144,5 +144,5 @@ Image Captioning
 
 
 #### [출처]
-[1] [그림원출처](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
+[1] [그림원출처](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)<br>
 [2] [함수설명]https://supermemi.tistory.com/16)
