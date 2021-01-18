@@ -49,7 +49,18 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 - model.add(Dense(50, kernel_initializer='he_normal')) : he_normal :: It draws samples from a truncated normal distribution centered on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor.
 - model.add(layers.Flatten()) : 
 - model.add(Activation('sigmoid')) : activation 함수 이거 쓰겠다~
+
 ##### [🍇initializers](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal)
+- Random : 평균 0, 분산 1
+- Xavier Initialization : 평균 0, 분산 = 2/(channel_in + channel_out) 
+- He Initialization : Relu함수 특화 평균 0, 분산 = 4/(channel_in + channel_out)
+```python
+tf.keras.initializers.RandomNormal()
+tf.keras.initializers.glorot_uniform()
+tf.keras.initializers.he_uniform()
+
+```
+
 
 ### 3. [tf.keras.models.Sequential.compile](https://www.tensorflow.org/api_docs/python/tf/keras/Model)
 
