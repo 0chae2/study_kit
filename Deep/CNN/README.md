@@ -52,6 +52,11 @@ Fully-conneted layer - classification
 - 채널 계산이 끝난 후 activation func을 활용해서 계산을 해준다.
 ![con1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/act.png)
 
+2. [Pooling layer](https://supermemi.tistory.com/16)
+- convolution 계산 결과인 feature maps에서 filter 특징을 더 뽑아내기 위해
+- input size를 줄이거나
+- overfitting을 조절 : parameter을 줄여 훈련데이터만 높은 성능을 보이는 과적합을 줄일 수 있다
+
 
 
 ![filter 출처https://www.youtube.com/watch?v=Em63mknbtWo&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=31](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/Filter.png)
@@ -68,6 +73,20 @@ Fully-conneted layer - classification
 
 --------------------
 ### [CNN실습](https://www.youtube.com/watch?v=9fldE3-yJpg&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=34)
+
+1. tf.keras.layer.Conv2D
+```python
+tf.keras.layers.Conv2D(
+    filters, kernel_size, strides=(1, 1), padding='valid',
+    data_format=None, dilation_rate=(1, 1), groups=1, activation=None,
+    use_bias=True, kernel_initializer='glorot_uniform',
+    bias_initializer='zeros', kernel_regularizer=None,
+    bias_regularizer=None, activity_regularizer=None, kernel_constraint=None,
+    bias_constraint=None, **kwargs
+)
+```
+- filters : 사용할 필터 수
+- kernel_size : int, tuple / list 다 가능 ex)  3 / (3,3) / [3,3]
 
 ----------
 ### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
