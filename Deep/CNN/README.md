@@ -9,6 +9,7 @@
  - 학습시간, 망의 크기, 변수의 개수의 문제!!!!
     
 ## [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
+
 - 도입배경 영상이 가지는 공간적 특성을 강화 시킴(local [receptivefield](https://distill.pub/2019/computing-receptive-fields/))
 - 전체 영상에 대해 가중치 및 바이어스공유(shared parameter)
 - 자유변수의 수 를 줄임(free parameter) --> CNN학습시간 줄임
@@ -28,6 +29,31 @@
 - Stride : 필터를 적용하는 간격
 - Kernel : 한번에 처리할 노드의 크기
 
+### layer
+- 32 * 32 * 3 = width * height * channel
+```
+Most widely used for image classification
+Generally, it consists of convolution layer, pooling and fully-connected layer
+Convolution, Pooling layer - feature extraction
+Fully-conneted layer - classification
+```
+1. Convolution layer
+- feature maps / activation maps을 만드는 필터
+- output feature maps의 채널 수 == filter 수
+![con1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/con1.png)
+
+- 채널이 1개일때
+![con1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/con2.png)
+
+- 채널이 3개일때
+![con1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/con3.png)
+![con1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/con4.png)
+
+- 채널 계산이 끝난 후 activation func을 활용해서 계산을 해준다.
+![con1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/act.png)
+
+
+
 ![filter 출처https://www.youtube.com/watch?v=Em63mknbtWo&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=31](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/Filter.png)
 ![stride](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/stride.png)
 ![check](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/check.png)
@@ -41,7 +67,9 @@
 ![full](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/fully.png)
 
 --------------------
+### [CNN실습](https://www.youtube.com/watch?v=9fldE3-yJpg&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=34)
 
+----------
 ### Modern CNN [Image classification](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/imageclassification.md)
 LeNet,
 AlexNet,
@@ -49,7 +77,7 @@ VGG Nets,
 GoogLeNet,
 ResNet
 #### Image classification에서 자주 등장하는 [top-5 error and top-1 error](https://www.quora.com/What-does-the-terms-Top-1-and-Top-5-mean-in-the-context-of-Machine-Learning-research-papers-when-report-empirical-results)
--
+
 
 
 ### Image Detection (object detection)
@@ -74,4 +102,4 @@ Image Captioning
 
 
 #### [출처]
-[1][그림원출처](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
+[1] [그림원출처](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
