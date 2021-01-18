@@ -150,3 +150,9 @@ model.add(relu())
 ###### 순서
 - layer - norm - activation
 - norm - activation - layer
+
+
+--------------------------------------
+
+## [CNN](https://www.youtube.com/watch?v=9fldE3-yJpg&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=34)
+
