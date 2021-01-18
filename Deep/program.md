@@ -21,6 +21,8 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 ## Fully-Conneted
 ### 0. 데이터 셋 불러오기
 ### 1. 데이터 셋 전처리
+- keras.utils.to_categorical : 원핫 인코딩! 7이라는 데이터가 있다면 --> 000000100로 변경해주는 것
+
 ### 2. [Keras Sequential](http://blog.daum.net/sualchi/13720852)
 ###### [model생성](https://ebbnflow.tistory.com/128?category=738689)
 - Sequential API : 단순한 층 쌓기 가능, 직관적 
@@ -122,4 +124,4 @@ https://www.tensorflow.org/tutorials/quickstart/advanced?hl=ko
 
 ## CNN
 
-keras.utils.to_categorical : 원핫 인코딩?!
+
