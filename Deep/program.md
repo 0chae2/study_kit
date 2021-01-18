@@ -123,7 +123,17 @@ https://www.tensorflow.org/tutorials/quickstart/advanced?hl=ko
 
 -----------------------------------
 
-## CNN
-
-##### 🍇Dropout
-![dropout]()
+##### [🍇Dropout](https://www.youtube.com/watch?v=U2wT7jVJ8Xk&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=29)
+![dropout](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/dropout.png)
+- 훈련 시 노드 몇개를 끄고 학습을 진행하는 것
+```python
+tf.keras.layers.Dropout(rate) # 0.5 ~ o.3
+model(images, training=True) # dropout을 사용하겠다
+model(images, training=False) # 사용하지 않겠다
+```
+##### 🍇Batch Normalization
+- 신경망을 지나가면서 Internal Covariate shift (분포가 이상해지는) 를 막기 위해 batch normalization함
+![batch](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/batch.png)
+```python
+tf.keras.layers.BatchNormalization()
+```
