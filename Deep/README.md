@@ -8,6 +8,8 @@
 - MNIST 성능 그래프 따기
 - CNN강의듣기
 - CNN / Alexnet 뭐 그런거 정리
+- [Tensorflow validation](https://zzsza.github.io/mlops/2019/05/12/tensorflow-data-validation-basic/)
+- [따로 data validation 존재](https://github.com/tensorflow/data-validation)
 ----------------------------------------------------------
 
 #### 🥝 [Tensorflow2.0](https://github.com/0chae2/study_kit/blob/main/Deep/program.md)
