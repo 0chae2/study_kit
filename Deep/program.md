@@ -156,3 +156,11 @@ model.add(relu())
 
 ## [CNN](https://www.youtube.com/watch?v=9fldE3-yJpg&list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C&index=34)
 
+- [Parameter explain and plt](https://youngq.tistory.com/42)
+- [np.argmax](https://webnautes.tistory.com/1234)
+```python
+print("모델 예측:", tf.model.predict_classes(x_test[300].reshape(1,28,28,1)))
+# 
+pre = np.argmax(tf.model.predict(x_test), axis=-1)
+print("모델예측:", pre[300])
+```
