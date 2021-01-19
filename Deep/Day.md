@@ -56,4 +56,27 @@ for i in range(m):
 - MLP 공간적인 구조를 고려하지 않는다
 
 
+5. [전이학습 (Transfer learning)](https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751)
+- [한글](https://jeinalog.tistory.com/13)
+- https://codingcrews.github.io/2019/01/22/transfer-learning-and-find-tuning/
+- 
+##### 이사람꺼 설명 좀 잘 되어있다. 고양이 개 합성곱 가중치 자연어 시계열 까지 보고 천천히 따라 해보자 
+- https://codetorial.net/tensorflow/transfer_learning.html
+
+#### 공식 페이지 전이학습도 나와있음
+- https://www.tensorflow.org/tutorials/images/transfer_learning?hl=ko
+
+##### 전이학습 pytorch 
+- https://tutorials.pytorch.kr/beginner/transfer_learning_tutorial.html
+
+##### 파이썬을 이용한 딥러닝 전이 학습 tensor 1.1,,,
+- 예제 코드 https://github.com/wikibook/transfer-learning
+
+
+##### objectdetection Yolo custom
+- https://eehoeskrap.tistory.com/370
+
+
+
+
 
