@@ -127,6 +127,7 @@
 [][Deep learning Image classification Guidebook](https://hoya012.github.io/blog/deeplearning-classification-guidebook-1/)
 
 
-
+- [activation function](https://medium.com/@snaily16/what-why-and-which-activation-functions-b2bf748c0441)
+- [back propagation] (https://ayoteralab.tistory.com/entry/ANN-10-%ED%99%9C%EC%84%B1%ED%99%94%ED%95%A8%EC%88%98s-Back-Propagation-ReLU-Sigmoid)
 ##### [tensorflow model](https://github.com/tensorflow/models/tree/master/research)
 ##### https://github.com/google-research/receptive_field
