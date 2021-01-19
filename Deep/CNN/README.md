@@ -9,7 +9,7 @@
  - 학습시간, 망의 크기, 변수의 개수의 문제!!!!
     
 ## [CNN이란](https://velog.io/@tmddn0311/CNN-tutorial)
-
+- https://halfundecided.medium.com/%EB%94%A5%EB%9F%AC%EB%8B%9D-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-cnn-convolutional-neural-networks-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-836869f88375
 - 도입배경 영상이 가지는 공간적 특성을 강화 시킴(local [receptivefield](https://distill.pub/2019/computing-receptive-fields/))
 - 전체 영상에 대해 가중치 및 바이어스공유(shared parameter)
 - 자유변수의 수 를 줄임(free parameter) --> CNN학습시간 줄임
