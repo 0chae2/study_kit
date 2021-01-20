@@ -25,7 +25,7 @@
 - speed : ReLU == tanh*6
 - sigmoid / tanh 처럼  일부 구간 제외 미분값 0 근처로 가는 Vanising Gradient > relu에도 발생하긴함 
 > 이를 해결하기 위해 2015 Batch Normalization 과 [Residual Network](#residual-network) 방법 탄생
-
+> why [ReLU](https://reniew.github.io/12/)
 2. Local Response Normalization(LRN)
 - 신경생물학의 lateral inhibition
 
