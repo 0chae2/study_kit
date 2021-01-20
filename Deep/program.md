@@ -51,6 +51,15 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 - model.add(Dense(50, kernel_initializer='he_normal')) : he_normal :: It draws samples from a truncated normal distribution centered on 0 with stddev = sqrt(2 / fan_in) where fan_in is the number of input units in the weight tensor.
 - model.add(layers.Flatten()) : 
 - model.add(Activation('sigmoid')) : activation 함수 이거 쓰겠다~
+```python
+tf.keras.layers.Dense(
+    units, activation=None, use_bias=True,
+    kernel_initializer='glorot_uniform',
+    bias_initializer='zeros', kernel_regularizer=None,
+    bias_regularizer=None, activity_regularizer=None, kernel_constraint=None,
+    bias_constraint=None, **kwargs
+)
+```
 
 ##### 🍇Activation
 ###### tf.keras.activations
@@ -63,13 +72,18 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 
 ##### [🍇initializers](https://lv99.tistory.com/23)
 - https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal
+- [공식keras initializers]https://keras.io/api/layers/initializers/#glorot_uniform)
 - Random : 평균 0, 분산 1
 - Xavier Initialization : 평균 0, 분산 = 2/(channel_in + channel_out) 
 - He Initialization : Relu함수 특화 평균 0, 분산 = 4/(channel_in + channel_out)
 ```python
-tf.keras.initializers.RandomNormal()
-tf.keras.initializers.glorot_uniform()
+tf.keras.initializers.RandomNormal() 
+tf.keras.initializers.glorot_uniform() # Dense default : [-limit, limit] 범위 정규분포 초기화 > limit == sqrt(6/fan_in, fan_out)
 tf.keras.initializers.he_uniform()
+
+# 보통 사용되어 지는 것
+# ReLU Family -> He initialization
+# Sigmoid, Tanh -> Xavier initialization
 
 ```
 
