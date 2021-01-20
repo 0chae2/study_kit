@@ -3,7 +3,6 @@
  *진행중지 반복진행계획 - 000000 ~ 000000 / 재시작일 <br>
  *진행완료 - <210117 ~ 210118> : 남에게 설명할 수 있을 정도가 되면!<br> 
  *진행계획 (220111)<br><br>
-- 오늘 전진했다고, 내일 후퇴하지 말란 법 없고, 오늘 후퇴했다고 내일 전진하지 말란 법 없다! 하루하루 성장했는지 고민하지 말고, 조급해하지 말자!! 그냥 열심히 한 나를 칭찬하자!!!>
 
 -------------------------------------------------------
 ## 배울부분 해야할 것
@@ -27,10 +26,16 @@
 ## 방법, 기간 2021
 1. [DL , ML](https://github.com/0chae2/study_kit/tree/main/Deep) 
    1) 기본이해 - 210115 ~ 210221
+   - optimizer : kit_lee 자료 보면서 따라 공부하기
+   - 
    - 기본구조, CNN, RNN, LSTM, transformer 등 간략하게 이해한다
-   - 갼단한 모델구현과 이해하기 tensorflow, pytorch등 활용
+   
+
+   
    - Reference 읽고 이해하기
+   - 갼단한 모델구현과 이해하기 tensorflow, pytorch등 활용
    - yolo나 기존 모델 커스텀화
+   
    - fastcam 강의 : 시간 날 때마다 볼 것
    - [andrew](https://www.coursera.org/learn/machine-learning/home/welcome) 
    - [CS231N 해설](https://cding.tistory.com/5) 
