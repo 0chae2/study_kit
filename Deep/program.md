@@ -79,7 +79,7 @@ tf.keras.layers.Dense(
 ```python
 tf.keras.initializers.RandomNormal() 
 tf.keras.initializers.glorot_uniform() # Dense default : [-limit, limit] 범위 정규분포 초기화 > limit == sqrt(6/fan_in, fan_out)
-tf.keras.initializers.he_uniform()
+tf.keras.initializers.he_uniform()#stddev = sqrt(2 / fan_in)
 
 # 보통 사용되어 지는 것
 # ReLU Family -> He initialization
