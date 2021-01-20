@@ -61,7 +61,8 @@ print(a.dtype, a.shape) # <dtype: 'int32'> 자료형 반환
 - f(x) = max(0,x) >>> leaky relu 는 tf.keras.layers에 있음!
 
 
-##### [🍇initializers](https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal)
+##### [🍇initializers](https://lv99.tistory.com/23)
+- https://www.tensorflow.org/api_docs/python/tf/keras/initializers/HeNormal
 - Random : 평균 0, 분산 1
 - Xavier Initialization : 평균 0, 분산 = 2/(channel_in + channel_out) 
 - He Initialization : Relu함수 특화 평균 0, 분산 = 4/(channel_in + channel_out)
