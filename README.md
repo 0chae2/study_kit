@@ -45,10 +45,15 @@
    2) 좀 더 깊이 공부
 2. [선형대수학 - 210100 ~ 210200](http://www.kocw.net/home/m/search/kemView.do?kemId=1189957&ar=relateCourse)
 3. 영상처리기본 - 210200 ~
-4. SLAM! 공부가 최종 목표!!!
+4. SLAM! 공부가 최종 목표!!! + Navigation
 - https://cv-learn.com/cv-learn-454b0d57429e44e68954ddddff22f7ca
 - https://changh95.github.io/
 
+
+5. Navigation
+- https://en.m.wikipedia.org/wiki/Motion_planning
+- mapping : [FIESTA](https://arxiv.org/abs/1903.02144)
+- A* : https://blog.habrador.com/2015/11/explaining-hybrid-star-pathfinding.html?m=1
 ------------------------------------------------------------
 ### 과제
 - 210120 MINIST 구현하기 
