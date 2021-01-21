@@ -55,6 +55,7 @@
 
 -------------------------
 ### VGG, 2014
+- AlexNet과, ZFNet은 8개의 layer를 사용했다면, VGG 11, 13, 16, 19개--> Deep 
 
 
 ### GoogleNet
