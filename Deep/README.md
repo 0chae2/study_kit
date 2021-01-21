@@ -86,8 +86,26 @@
 
 
 
+#### 객체탐지 
+- 20 ~ 21 : scaled yolo, deformable detr, sparse rcnn
+
+#### Segmentation
+ 
+- [arxiv top 한주 한달](http://www.arxiv-sanity.com)
+
+
+## 책
+- 혼자하는 머신러닝 : https://sihan-son.github.io/alone-dl/
+- 밑바닥부터 딥러닝3
+- 핸즈온 머신러닝 
+
+## 대회
+ - kaggle
+ - Lyft
+
+
   
-[참고한 자료]  
+## [참고한 사이트]  
 - [머신러닝개요](https://m.blog.naver.com/laonple/221166694845)
 - [AlexNet](https://bskyvision.com/421)
 - [조대협님 블로그](https://bcho.tistory.com/1149)
