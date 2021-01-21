@@ -1,8 +1,8 @@
 *본 게시글은 개인적인 공부를 위해 작성된 내용임으로, 자세한 내용은 아래의 명시한 출처를 참고해주세요.
 - LeNet, AlexNet, VGGNet, GoogLeNet, ResNet, SENet 
 ### LeNet-5 1998
-
-
+- LeNet-1 ~ LeNet-5
+---------
 ### AlexNet, 2012
 - GTX 580 2개로 연산 병렬처리
 - Input 227 * 227 * 3 images
@@ -18,7 +18,7 @@
 > norm 최근에 안함 
 ![alex1](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/alex1.png)
 
-
+#### AlexNet 특징
 1. ReLu Nonlinearity
 - tanh(2/(1+e^(-2x))-1)함수를 사용하는 것이 아닌 ReLu 함수를 활용함 
 - ReLU : max(0,x) 를 처음 제안한 논문은 아님 
@@ -26,8 +26,10 @@
 - sigmoid / tanh 처럼  일부 구간 제외 미분값 0 근처로 가는 Vanising Gradient > relu에도 발생하긴함 
 > 이를 해결하기 위해 2015 Batch Normalization 과 [Residual Network](#residual-network) 방법 탄생
 > why [ReLU](https://reniew.github.io/12/)
+
 2. Local Response Normalization(LRN)
 - 신경생물학의 lateral inhibition
+![LRN](https://github.com/0chae2/study_kit/blob/main/Deep/CNN/pic/LRN.png)
 
 3. Overlapping Pooling
 - 기존에는 Non-overlapping pooling 이였음
@@ -41,6 +43,18 @@
 
 - PCA
 - data augmentation : 데이터의 변형을 통해 > 반전 or 크기변화 이동 > 하나의 이미지를 여러가지 학습셋으로 늘이는 역할 
+
+
+---------------------
+### ZFNet, 2013
+- ILSVRC 2013 우승 
+- AlexNet 에서 첫 Conv layer filter size 11->7 / stride 4 -> 2 그 밖의 Conv layer filter 개수 키워주는 튜닝 
+- feature map 시각화와 Occlusion 기반 attribution 기법에 집중
+- [설명참고](https://www.stand-firm-peter.me/2020/07/16/ZFNet/)
+- [설명2 영어](https://medium.com/coinmonks/paper-review-of-zfnet-the-winner-of-ilsvlc-2013-image-classification-d1a5a0c45103)
+
+-------------------------
+### VGG, 2014
 
 
 ### GoogleNet
